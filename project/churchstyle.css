@@ -32,6 +32,14 @@
 	outline: none;
 }
 
+.nav-links a:hover {
+  background-color: #AE71F7; /* Purple-er background on hover. */
+  color: black; /* Keep the text color stays black. */
+  padding: 5px; /* increase the padding for easier clicks */
+  border-radius: 5px; /* rounded corners for the new color background */
+  transition: background-color 0.3s ease, color 0.3s ease; /* animated transition thing */
+}
+
 /*note to self: space-between seperates topnav from it's kids aka title-container.*/
 /*THIS IS TEXT-SPECIFIC STUFF*/
 #intro-text {
