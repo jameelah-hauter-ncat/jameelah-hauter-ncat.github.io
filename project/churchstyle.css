@@ -4,31 +4,31 @@
   justify-content: space-between; /*this aligns the nav to the right end*/
   align-items: center;
   background: rgb(174,113,247);
-  background: linear-gradient(90deg, rgba(174,113,247,1) 0%, rgba(230,230,250,1) 100%);
-  padding: 10px 16px; /*this controls the padding for the element*/
+  background: linear-gradient(90deg, rgba(174,113,247,1) 0%, rgba(230,230,250,1) 100%); /*Gradient control*/
+  padding: 10px 16px; /*this controls the padding for a the element*/
   color: black;
 }
 
 
 .title-container {
 	display: flex;
-	flex-direction: column;  /* Stacks the <h1> and <em> vertically */
-	align-items: flex-start; /* Aligns both the <h1> and <em> to the left */
+	flex-direction: column;  /* Stacked the <h1> and <em> vertically */
+	align-items: flex-start; /* Aligned both the <h1> and <em> to the left */
 	color: black;
 }
 
 .nav-links {
 	display: flex; /*added div to the navigation links to alter via CSS*/
-	align-items: center; /*centers them vertically if needed*/
-	gap: 20px; /*space between links*/
-	margin-left: auto; /*pushes them right*/
+	align-items: center; /*centered them vertically. */
+	gap: 20px; /*space added between links*/
+	margin-left: auto; /*pushed them right*/
 }
 
 .nav-links a {
-	text-decoration: none;
+	text-decoration: none; /*Used this to remove text decoration and clean things up a bit.*/
 }
 
-.nav-links a:focus {
+.nav-links a:focus { /*Same as above; used to clean up the Nav and remove underlines and such.*/
 	outline: none;
 }
 
@@ -36,18 +36,18 @@
 /*THIS IS TEXT-SPECIFIC STUFF*/
 #intro-text {
 	margin-top: 0;
-	margin-bottom: 0;  /* Removes extra space below the <h1> */
+	margin-bottom: 0;  /* Removed extra space below the <h1> */
 }
 
 #welcome-msg {
-	margin-top: 0;     /* Removes extra space above the <em> */
+	margin-top: 0;     /* removed extra space above the <em> */
 	font-style: italic; /* Keeps the text italicized */
 }
 
 h2 {
-    border-bottom: 1px solid #ae71f7; /* Adds a blue bar */
-    padding-bottom: 5px; /* Optional: adds some space between the text and the bar */
-    color: #333; /* Optional: set text color for better contrast */
+    border-bottom: 1px solid #ae71f7; /* Added a blue bar */
+    padding-bottom: 5px; /* : added some space between the text and the bar */
+    color: #333; /* : set a text color for a better contrast */
 }
 
 /*THIS IS PAGE DESIGN STUFF*/
@@ -56,7 +56,7 @@ body {
 	background-color: lavender;
 }
 
-/* Container for the columns */
+/* Container for a the columns */
 .container {
     display: flex;
     padding: 20px;
@@ -64,17 +64,17 @@ body {
 
 /* Left column styling */
 .left-column {
-    flex: 1; /* Takes up less space */
+    flex: 1; /* Reduced space */
     padding: 20px;
-    background-color: #f9f9fe; /* Lighter background for left column */
+    background-color: #f9f9fe; /* Lighted background for the left column */
 }
 
 /* Right column styling */
 .right-column {
-    flex: 4; /* Takes up more space */
+    flex: 4; /* This takes up more space. */
     padding: 20px;
-    background-color: #ffffff; /* White background for right column */
-    border-left: 3px solid #ae71f7; /* Black dividing line between the two columns */
+    background-color: #ffffff; /* White background for the right column */
+    border-left: 3px solid #ae71f7; /* added a black dividing line between the two columns */
 }
 
 /*THIS CONTROLS THE LIST PADDING*/
@@ -108,8 +108,8 @@ ul {
   color: lightgray;
 }
 
-.days div:nth-child(4), /* Wednesday highlight */
-.days div:nth-child(1)  /* Sunday highlight */ {
+.days div:nth-child(4), /* Wednesday highlighted */
+.days div:nth-child(1)  /* Sunday highlighted */ {
   background-color: lavender;
 }
 
@@ -119,5 +119,5 @@ ul {
 	margin-left: auto;
 	padding: 5px;
 	background: rgb(174,113,247);
-	background: linear-gradient(90deg, rgba(174,113,247,1) 0%, rgba(230,230,250,1) 100%);
+	background: linear-gradient(90deg, rgba(174,113,247,1) 0%, rgba(230,230,250,1) 100%); /*Gradient control*/
 }

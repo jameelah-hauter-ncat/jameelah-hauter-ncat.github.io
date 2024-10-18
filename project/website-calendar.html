@@ -12,11 +12,11 @@
 <!--This is stuff for the top bar.-->
 <div class="topnav-container">
 	<div class="title-container">
-		<h1 id="intro-text"><i class="fa-solid fa-cross"></i>&nbsp;Welcome to your church homepage.</h1>
+		<h1 id="intro-text"><i class="fa-solid fa-cross"></i>&nbsp;Welcome to your church homepage.</h1> <!--Non-breaking space deployed here to seperate icon and text.-->
 		<em id="welcome-msg">Emmanuel Hill Free Will Baptist Church welcomes you!</em>
 	</div>
 	<div class="nav-links">
-	<a class="active" href="index.html">Home</a>
+	<a class="active" href="index.html">Home</a> <!--No spaces are allowed here; all spaces between words were replaced with - to rectify validation errors.-->
 	<a href="website-calendar.html">Calendar</a>
 	<a href="website-meetings.html">Meetings</a>
 	<a href="website-reading.html">Readings</a>
@@ -27,26 +27,23 @@
 <main>
 <!--Need to put a column here over to the left.-->
 <div class="container">
-	<div class="left-column">
-		<h2>Contact the Pastor</h2>
+	<div class="left-column"> <!--For a two-column layout, we needed two classes. Left and right were named for convenience along with a container class.-->
+		<h2>Contact the Pastor</h2> 
 			<p>Questions, comments and concerns?</p>
 			<p>Please contact the pastor at: email@email.com.</p>
 	</div>
 
 <!--This should be the start of the content over to the right. Two columns total.-->
 	<div class="right-column">
-		<h2>Calendar</h2>
+		<h2>Calendar</h2> <!--Multiple headings were changed from h1 to h2 due to validation errors, and for accessibility reasons.-->
 			<p>This page offers a calendar view of church events, including services and member meetings.</p>
 
 <!--This is the calendar section.-->
-	<div>
+	<div> <!--<section> was replaced with <div> here to rectify HTML validation errors.-->
 		<p>Below is this week's calendar that will allow you to view highlighted days where we'll have service. </p>
 		<p>To access other event such as the Calendar, Meetings, and Reading sections, use the navigation bar to the upper right of this webpage.</p>
 	</div>
 
-<!--add a calendar widjet here. very interactive-->
-<!--special consideration: open-source calendar widjets? something that can run locally; no google calendars here.!-->
-<!--if using https://github.com/edificeio/calendar-widget/tree/master, remember to report the calendar as open-source software.!-->
 <section id="church-calendar">
 <h2>Our Calendar</h2>
 <ul>
@@ -54,7 +51,7 @@
 		<ul>
 			<li>Church will be held every first and third sunday from 11:00AM to 12:00PM EST.</li>
 		</ul>
-	</li>
+	</li> <!--Note: MANY errors were generated from <ul> inside <ul> instances. </li> should always follow <ul> to avoid this.-->
 </ul>
 
 <ul>
@@ -62,7 +59,7 @@
 		<ul>
 			<li>Bible study via conference call is held every Wednesday from 7:00PM to 8:00PM EST.</li>
 		</ul>
-	</li>
+	</li> <!--Note: MANY errors were generated from <ul> inside <ul> instances. </li> should always follow <ul> to avoid this.-->
 </ul>
 
 <div class="calendar">
@@ -78,17 +75,15 @@
     <!-- Added other days. -->
   </div>
 </div>
-</section>
+</section> <!--This thing is very, very sneaky but very, very important to wrap up the <section>.-->
 <!--This is the end of the calendar.-->
 	</div>
-</div>
-
-
+</div> <!--Two <div> ending tags here due to the column layout using div classes.-->
 </main>
 
 
 <footer>
-<p id="contact2">For concerns and inquiries, please contact the pastor at (email@email.com).</p>
+<p id="contact2">For concerns and inquiries, please contact the pastor at (email@email.com).</p> <!--ID was added here for CSS customization seperate from the copyright.-->
 <p>&copy; 2024 Jameelah Hauter for assignment purposes at North Carolina Agricultural and Technical State University.</p>
 
 <a href="https://validator.w3.org/check?uri=referer"
@@ -96,7 +91,7 @@ referrerpolicy="unsafe-url"> Validate HTML </a> <br>
 <a href="https://jigsaw.w3.org/css-validator/check/referer"
 referrerpolicy="unsafe-url"> Validate CSS </a>
 
-</footer>
+</footer> 
 
-</body>
+</body> <!--NOTE: Body must ALWAYS contain the Footer to avoid HTML validation errors.-->
 </html>
