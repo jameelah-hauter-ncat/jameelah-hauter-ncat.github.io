@@ -1,0 +1,123 @@
+/*THIS IS TOP BAR STUFF*/
+.topnav-container {
+  display: flex;
+  justify-content: space-between; /*this aligns the nav to the right end*/
+  align-items: center;
+  background: rgb(174,113,247);
+  background: linear-gradient(90deg, rgba(174,113,247,1) 0%, rgba(230,230,250,1) 100%);
+  padding: 10px 16px; /*this controls the padding for the element*/
+  color: black;
+}
+
+
+.title-container {
+	display: flex;
+	flex-direction: column;  /* Stacks the <h1> and <em> vertically */
+	align-items: flex-start; /* Aligns both the <h1> and <em> to the left */
+	color: black;
+}
+
+.nav-links {
+	display: flex; /*added div to the navigation links to alter via CSS*/
+	align-items: center; /*centers them vertically if needed*/
+	gap: 20px; /*space between links*/
+	margin-left: auto; /*pushes them right*/
+}
+
+.nav-links a {
+	text-decoration: none;
+}
+
+.nav-links a:focus {
+	outline: none;
+}
+
+/*note to self: space-between seperates topnav from it's kids aka title-container.*/
+/*THIS IS TEXT-SPECIFIC STUFF*/
+#intro-text {
+	margin-top: 0;
+	margin-bottom: 0;  /* Removes extra space below the <h1> */
+}
+
+#welcome-msg {
+	margin-top: 0;     /* Removes extra space above the <em> */
+	font-style: italic; /* Keeps the text italicized */
+}
+
+h2 {
+    border-bottom: 1px solid #ae71f7; /* Adds a blue bar */
+    padding-bottom: 5px; /* Optional: adds some space between the text and the bar */
+    color: #333; /* Optional: set text color for better contrast */
+}
+
+/*THIS IS PAGE DESIGN STUFF*/
+body {
+	font-family: Verdana, Arial;
+	background-color: lavender;
+}
+
+/* Container for the columns */
+.container {
+    display: flex;
+    padding: 20px;
+}
+
+/* Left column styling */
+.left-column {
+    flex: 1; /* Takes up less space */
+    padding: 20px;
+    background-color: #f9f9fe; /* Lighter background for left column */
+}
+
+/* Right column styling */
+.right-column {
+    flex: 4; /* Takes up more space */
+    padding: 20px;
+    background-color: #ffffff; /* White background for right column */
+    border-left: 3px solid #ae71f7; /* Black dividing line between the two columns */
+}
+
+/*THIS CONTROLS THE LIST PADDING*/
+ul {
+	padding-left: 20px;
+}
+
+/*THIS IS THE CALENDAR SECTION! HIGHLY EXPERIMENTAL!*/
+.calendar {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.month h2 {
+  text-align: center;
+}
+
+.weekdays, .days {
+  display: flex;
+  justify-content: space-between;
+}
+
+.days div {
+  width: calc(100% / 7);
+  padding: 10px;
+  text-align: center;
+}
+
+.prev-month {
+  color: lightgray;
+}
+
+.days div:nth-child(4), /* Wednesday highlight */
+.days div:nth-child(1)  /* Sunday highlight */ {
+  background-color: lavender;
+}
+
+/*THIS IS FOOTER DESIGN STUFF.*/
+
+#contact2 {
+	margin-left: auto;
+	padding: 5px;
+	background: rgb(174,113,247);
+	background: linear-gradient(90deg, rgba(174,113,247,1) 0%, rgba(230,230,250,1) 100%);
+}
