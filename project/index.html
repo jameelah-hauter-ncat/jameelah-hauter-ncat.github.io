@@ -4,10 +4,14 @@
 	<meta charset="UTF-8">
 	<link rel="stylesheet" href="churchstyle.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css">
+	<script src="isolated.js"></script>
 	<title>Church Home</title>
 </head>
 
-<body>
+<body id="home-page">
 
 <!--This is stuff for the top bar.-->
 <div class="topnav-container">
@@ -31,7 +35,10 @@
 		<h2>Contact the Pastor</h2>
 			<p>Questions, comments and concerns?</p>
 			<p>Please contact the pastor at: email@email.com.</p>
-	</div>
+			<!-- An image of the church pastor takes up the space below here. --!>
+			<img src="images/pastor.jpg" alt="A picture of the church pastor." class="standardized-image">
+	</div>   
+<!-- This is the end of the left column. --!>
 
 <!--This should be the start of the content over to the right. Two columns total.-->
 	<div class="right-column">
@@ -41,8 +48,8 @@
 <!--This is the start of the list.-->
 	<div> <!--<section> was replaced with <div> here to rectify HTML validation errors.-->
 		<p>Below is a list of services offered by Emmanuel Hill Baptist Church.</p>
-		<p>To view the details of a specific service, look to the hollow circle underneath each bullet entry. These will always contain further information.</p>
-		<p>To visit other pages of the site such as the Calendar, Meetings, and Reading sections, use the navigation bar to the upper right of this webpage.</p>
+		<p>To view the details of a specific service, look to the hollow circle underneath each bullet entry. These will always contain further information and the ability to add them to your personal calendar by downloading a file. When this file is downloaded, simply open it with your preferred email client.</p>
+		<p>To visit other pages of the site such as the Event Calendar, Meetings, and Reading sections, use the navigation bar to the upper right of this webpage.</p>
 	</div>
 
 <section id="service-list">
@@ -50,7 +57,9 @@
 <ul>
 	<li>Daily Church Service
 		<ul>
-			<li>Church will be held every first and third sunday from 11:00AM to 12:00PM EST.</li>
+			<li>Church will be held every
+			<span class="add-event" data-title="Sunday Service" data-date="2024-12-10T11:00:00" data-duration="1:00">
+			first and third Sunday</span> from 11:00AM to 12:00PM EST.</li> <!-- Clickable days to add to personal calendars. --!>
 		</ul>
 	</li> <!--Note: MANY errors were generated from <ul> inside <ul> instances. </li> should always follow <ul> to avoid this.-->
 </ul>
@@ -58,7 +67,9 @@
 <ul>
 	<li>Bible Study Conference
 		<ul>
-			<li>Bible study via conference call is held every Wednesday from 7:00PM to 8:00PM EST.</li>
+			<li>Bible study via conference call is held every
+			<span class="add-event" data-title="Bible Study" data-date="2024-12-06T19:00:00" data-duration="1:00">
+			Wednesday</span> from 7:00PM to 8:00PM EST.</li> <!-- Clickable days to add to personal calendars. --!>
 		</ul>
 	</li> <!--Note: MANY errors were generated from <ul> inside <ul> instances. </li> should always follow <ul> to avoid this.-->
 </ul>

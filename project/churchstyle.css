@@ -129,3 +129,89 @@ ul {
 	background: rgb(174,113,247);
 	background: linear-gradient(90deg, rgba(174,113,247,1) 0%, rgba(230,230,250,1) 100%); /*Gradient control*/
 }
+
+/* This is to standardize image sizes and keep a consistent border. */
+.standardized-image {
+	width: 300px;
+	height: 200px;
+	max-width: 300px;
+	height: auto;
+	border: 3px solid #AE71F7;
+	border-radius: 0;
+	margin-top: 20px;
+	object-fit: cover;
+}
+/*-------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/* CSS BELOW IS FOR JAVASCRIPT ELEMENTS. CHECK ISOLATED.JS FOR CODE SOURCE. PLACEHOLDERS FOR CONTENT ARE IN HTML. */
+/*-------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/* Stylizing and highlighting for the event calendar on website-calendar.html. */
+.ui-datepicker .church-service-event a {
+	background-color: #FFD700;
+	color: black;
+	font-weight: bold;
+}
+
+.ui-datepicker .bible-study-event a {
+	background-color: #00BFFF;
+	color: white;
+	font-weight: bold;
+}
+/*-----------------------------------------------------------------------------------------*/
+/* Stylizing the Google Maps container for the church location on website-meetings.html. */
+#mapContainer {
+	border: 3px solid #AE71F7;
+	border-radius: 0;
+	width: 100%;
+	max-width: 600px;
+	height: 400px;
+	margin-top: 20px;
+	overflow: hidden;
+}
+
+/* Styling the iframe for the Google Map on the homepage. */
+#mapFrame {
+	width: 100%;
+	height: 100%;
+	border: none;
+}
+/*-----------------------------------------------------------------------------------------*/
+/* This stylizes the "show verse" buttons on the website-reading.html page. */
+.fetch-verse {
+	padding: 5px 10px;
+	background-color: #AE71F7;
+	color: white;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	font-size: 14px;
+	margin-top: 5px;
+}
+
+fetch-verse:hover {
+	background-color: #8A54CC; /* This darkens it while hovered over. */
+}
+
+.verse-display {
+	margin-top: 10px;
+	padding: 10px;
+	background-color: #f9f9f9;
+	border: 1px solid #ddd;
+	border-radius: 4px;
+	font-family: Arial, sans-serif;
+	color: #333;
+	display: none; /*This is for initially hiding the display until clicked. */
+}
+/*-----------------------------------------------------------------------------------------*/
+/* This stylizes service words on the index page to make them noticable for clicking. */
+.add-event {
+	color: #AE71F7;
+	cursor: pointer;
+	text-decoration: underline;
+}
+
+.add-event:hover {
+	color: #8A54CC;
+	font-weight: bold;
+}
+/*-----------------------------------------------------------------------------------------*/
+</style>

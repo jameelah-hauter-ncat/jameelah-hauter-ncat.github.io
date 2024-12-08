@@ -4,11 +4,14 @@
 	<meta charset="UTF-8">
 	<link rel="stylesheet" href="churchstyle.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css">
+	<script src="isolated.js"></script>
 	<title>Church Calendar</title>
 </head>
 
-<body>
-
+<body id="calendar-page">
 <!--This is stuff for the top bar.-->
 <div class="topnav-container">
 	<div class="title-container">
@@ -31,6 +34,7 @@
 		<h2>Contact the Pastor</h2> 
 			<p>Questions, comments and concerns?</p>
 			<p>Please contact the pastor at: email@email.com.</p>
+			<img src="images/EHMFWBC.jpg" alt="The front of Emmanuel Hill FWB Church." class="standardized-image"> <!-- An image of the church. -->
 	</div>
 
 <!--This should be the start of the content over to the right. Two columns total.-->
@@ -40,7 +44,7 @@
 
 <!--This is the calendar section.-->
 	<div> <!--<section> was replaced with <div> here to rectify HTML validation errors.-->
-		<p>Below is this week's calendar that will allow you to view highlighted days where we'll have service. </p>
+		<p>Below is this week's calendar that will allow you to view highlighted days where we'll have service. You can check the event of that day by hovering your mouse over it. </p>
 		<p>To access other event such as the Calendar, Meetings, and Reading sections, use the navigation bar to the upper right of this webpage.</p>
 	</div>
 
@@ -62,25 +66,26 @@
 	</li> <!--Note: MANY errors were generated from <ul> inside <ul> instances. </li> should always follow <ul> to avoid this.-->
 </ul>
 
-<div class="calendar">
-  <div class="month">
-    <h2>October 2024</h2>
-  </div>
-  <div class="weekdays">
-    <div>Sun</div><div>Mon</div><div>Tue</div><div>Wed</div><div>Thu</div><div>Fri</div><div>Sat</div>
-  </div>
-  <div class="days">
-    <div class="prev-month">20</div><div class="prev-month">21</div><div>22</div><div>23</div>
-    <div>24</div><div>25</div><div>26</div><div>27</div><div>28</div><div>29</div><div>30</div>
-    <!-- Added other days. -->
-  </div>
-</div>
+
+
+
+
+
+
+<!-- AREA FOR CALENDAR --!>
+<div id="calendar-widget"></div>
+<!-- AREA FOR CALENDAR --!>
+
+
+
+
+
+
+
 </section> <!--This thing is very, very sneaky but very, very important to wrap up the <section>.-->
-<!--This is the end of the calendar.-->
-	</div>
+	</div> <!--This is the end of the calendar.-->
 </div> <!--Two <div> ending tags here due to the column layout using div classes.-->
 </main>
-
 
 <footer>
 <p id="contact2">For concerns and inquiries, please contact the pastor at (email@email.com).</p> <!--ID was added here for CSS customization seperate from the copyright.-->
